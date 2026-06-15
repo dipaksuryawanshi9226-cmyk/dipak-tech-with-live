@@ -22,6 +22,8 @@ background:#f4f7fb;
 color:#333;
 }
 
+/* HEADER */
+
 header{
 background:#0f172a;
 padding:15px 8%;
@@ -32,12 +34,26 @@ position:fixed;
 width:100%;
 top:0;
 z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
 .logo{
-font-size:30px;
-font-weight:bold;
+display:flex;
+align-items:center;
+gap:12px;
 color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+background:white;
+padding:3px;
+box-shadow:0 0 10px rgba(255,255,255,0.3);
 }
 
 nav a{
@@ -51,6 +67,8 @@ transition:0.3s;
 nav a:hover{
 color:#38bdf8;
 }
+
+/* HERO */
 
 .hero{
 height:100vh;
@@ -104,6 +122,8 @@ transition:0.3s;
 background:#1d4ed8;
 }
 
+/* SECTION */
+
 .section{
 padding:90px 8%;
 }
@@ -113,6 +133,8 @@ text-align:center;
 font-size:40px;
 margin-bottom:50px;
 }
+
+/* COURSES */
 
 .cards{
 display:grid;
@@ -143,6 +165,8 @@ font-weight:bold;
 color:#2563eb;
 }
 
+/* ABOUT */
+
 .about{
 max-width:1000px;
 margin:auto;
@@ -170,6 +194,8 @@ box-shadow:0 5px 15px rgba(0,0,0,0.1);
 color:#2563eb;
 margin-bottom:10px;
 }
+
+/* CONTACT */
 
 .contact-box{
 max-width:700px;
@@ -203,6 +229,8 @@ font-size:16px;
 background:#1d4ed8;
 }
 
+/* FOOTER */
+
 footer{
 background:#0f172a;
 color:white;
@@ -218,6 +246,7 @@ margin-top:20px;
 font-size:30px;
 color:white;
 margin:0 12px;
+text-decoration:none;
 transition:0.3s;
 }
 
@@ -228,6 +257,8 @@ transform:scale(1.2);
 footer p{
 margin-top:15px;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -252,6 +283,10 @@ font-size:18px;
 font-size:30px;
 }
 
+.logo span{
+font-size:20px;
+}
+
 }
 
 </style>
@@ -260,7 +295,11 @@ font-size:30px;
 <body>
 
 <header>
-<div class="logo">Tech Duniya Institute</div>
+
+<div class="logo">
+<img src="logo.png" alt="Tech Duniya Institute Logo">
+<span>Tech Duniya Institute</span>
+</div>
 
 <nav>
 <a href="#home">मुख्यपृष्ठ</a>
@@ -268,6 +307,7 @@ font-size:30px;
 <a href="#about">आमच्याबद्दल</a>
 <a href="#contact">संपर्क</a>
 </nav>
+
 </header>
 
 <section class="hero" id="home">
@@ -298,7 +338,7 @@ Cyber Security आणि Government Exam मार्गदर्शनासा
 <div class="cards">
 
 <div class="card">
-<h3>Python Programming</h3>
+<h3>Python Programming Masterclass</h3>
 <p>Basic ते Advanced Programming.</p>
 <div class="price">₹999</div>
 </div>
@@ -311,7 +351,7 @@ Cyber Security आणि Government Exam मार्गदर्शनासा
 
 <div class="card">
 <h3>Web Development</h3>
-<p>HTML, CSS, JavaScript, React.</p>
+<p>HTML, CSS, JavaScript, Responsive Design.</p>
 <div class="price">₹1499</div>
 </div>
 
